@@ -259,9 +259,9 @@ class Person(DataBaseObject):
 
 class DataBase(metaclass=SingletonMeta):
 
-    FILENAME = "program_data.dat"
+    FILENAME = "./program_data.dat"
 
-    RESERVE = "program_data_copy.dat"
+    RESERVE = "./program_data_copy.dat"
 
     ELEMENTS = {
         "rooms": Room,

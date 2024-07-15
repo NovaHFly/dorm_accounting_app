@@ -26,14 +26,14 @@ CustomCBox:on {
     border-bottom-right-radius: 0px;
 }
 CustomCBox::drop-down {
-    background: url(images/down-arrow.png) no-repeat;
+    background: url(dorm_accounting/images/down-arrow.png) no-repeat;
     width: 16px;
     height: 16px;
     margin-right:4px;
     margin-top: 6px;
 }
 CustomCBox::drop-down:on {
-    background: url(images/up-arrow.png) no-repeat;
+    background: url(dorm_accounting/images/up-arrow.png) no-repeat;
 }
 
 QLineEdit {
@@ -210,14 +210,14 @@ QSpinBox {
     border: 2px solid black;
 }
 QSpinBox::down-button {
-    background: url(images/down-arrow.png) no-repeat;
+    background: url(dorm_accounting/images/down-arrow.png) no-repeat;
     width: 16px;
     height: 13px;
     margin-right:4px;
     margin-bottom: 2px;
 }
 QSpinBox::up-button {
-    background: url(images/up-arrow.png) no-repeat;
+    background: url(dorm_accounting/images/up-arrow.png) no-repeat;
     width: 16px;
     height: 13px;
     margin-right:4px;

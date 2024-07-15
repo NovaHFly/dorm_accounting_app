@@ -1,0 +1,32 @@
+[tool.poetry]
+name = "dorm-accounting"
+version = "0.1.0"
+description = "Dormitory occupants accounting app"
+authors = ["NovaHFly <mugiviska@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.scripts]
+run_app = "dorm_accounting:main_cli"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.11"
+PySide6 = "<=6.3.0"
+
+[tool.poetry.group.testing.dependencies]
+ruff = "^0.4.10"
+mypy = "^1.10.1"
+pytest = "^7"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-v"
+
+[tool.mypy]
+strict_optional = false
+disable_error_code = "import-untyped"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

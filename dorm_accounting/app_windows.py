@@ -33,9 +33,9 @@ from PySide6.QtWidgets import (
     QMenuBar as MenuBar
 )
 
-from database import *
-from custom_inputs import *
-from custom_messages import *
+from .database import *
+from .custom_inputs import *
+from .custom_messages import *
 
 
 class RelativePositionedWindow(TopWindow):
@@ -362,7 +362,7 @@ class ObjectView(Frame):
         l_view.setSpacing(self.SPACING)
         l_view.setContentsMargins(*self.MARGINS)
 
-        l_view.setSizeConstraint(l_view.SetFixedSize)
+        # l_view.setSizeConstraint(l_view.SetFixedSize)
     
     def construct_scroll(self):
         self.scroll_area = Scroll()
@@ -548,9 +548,9 @@ class SearchFrame(Frame):
 class Dialog_Help(MBox):
 
     HELP_PARTS = {
-        "room": "help\\help_rooms.html",
-        "person": "help\\help_occupants.html",
-        "room-occupants": "help\\help_room_occupants.html"
+        "room": "dorm_accounting/help/help_rooms.html",
+        "person": "dorm_accounting/help/help_occupants.html",
+        "room-occupants": "dorm_accounting/help/help_room_occupants.html"
     }
 
     def __init__(self, parent, help_part:str):
