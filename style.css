@@ -1,0 +1,269 @@
+CenteredWindow {
+    background: #294157;
+}
+
+EditDialog {
+    background: #294157;
+}
+EditDialog QFrame[frame=inputs] {
+    background: #fff;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+EditDialog QLabel {
+    margin-left: 10px;
+}
+
+CustomCBox {
+    min-width: 100px;
+    min-height: 26px;
+    border-radius: 6px;
+    padding-left: 5px;
+    border: 2px solid black;
+}
+CustomCBox:on {
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+CustomCBox::drop-down {
+    background: url(images/down-arrow.png) no-repeat;
+    width: 16px;
+    height: 16px;
+    margin-right:4px;
+    margin-top: 6px;
+}
+CustomCBox::drop-down:on {
+    background: url(images/up-arrow.png) no-repeat;
+}
+
+QLineEdit {
+    background: #FFF;
+    border-radius: 6px;
+    min-height: 26px;
+    padding-left: 5px;
+    border: 2px solid black;
+}
+
+QPushButton {
+    font-weight: bold;
+    font-size: 13px;
+    min-width: 100px;
+    min-height: 26px;
+    border-radius: 13px;
+}
+
+
+QPushButton:enabled {
+    background: #000;
+    color: #FFF;
+}
+QPushButton:enabled:hover {
+    background: #151C24;
+}
+QPushButton:enabled:pressed {
+    background: #2A333C
+}
+
+QPushButton:disabled {
+    background: #121D27;
+    color: #999
+}
+
+QScrollArea {
+    background: #FFF;
+    border-radius: 10px;
+    padding: 5px;
+}
+ObjectView {
+    background: #00000000
+}
+
+ViewItem {
+    border-radius: 10px;
+    border: 2px solid black;
+}
+ViewItem QRadioButton {
+    width: 20px;
+    height: 20px;
+}
+
+PersonItem QLabel {
+    height: 20px
+}
+PersonItem QLabel[field=key] {
+    min-width: 40px
+}
+PersonItem QLabel[field=name] {
+    min-width: 250px
+}
+PersonItem QLabel[field=room] {
+    min-width: 130px;
+}
+PersonItem QLabel[field=phone] {
+    min-width: 130px
+}
+
+PersonItem[gender=f] {
+    background: #F0E68C;
+}
+
+PersonItem[gender=m] {
+    background: #E9967A;
+}
+
+RoomItem QLabel {
+    min-width: 135px;
+    min-height: 24px;
+    margin: 0;
+}
+RoomItem QPushButton {
+    border-radius: 10px;
+
+    color: #FFF;
+    font-weight: bold;
+    font-size: 12px;
+
+    min-width: 100px;
+    min-height: 24px;
+
+    margin-top: 5px;
+}
+RoomItem[kind=f] {
+    background: #F0E68C;
+}
+RoomItem[kind=f] QPushButton {
+    background: #72653F
+}
+RoomItem[kind=f] QPushButton:hover {
+    background: #847957
+}
+RoomItem[kind=f] QPushButton:pressed {
+    background: #9F967B
+}
+
+
+RoomItem[kind=s] {
+    background: #D0D0DD
+}
+RoomItem[kind=s] QPushButton {
+    background: #414146
+}
+RoomItem[kind=s] QPushButton:hover {
+    background: #59595E
+}
+RoomItem[kind=s] QPushButton:pressed {
+    background: #717175
+}
+
+RoomItem[kind=m] {
+    background: #E9967A;
+}
+RoomItem[kind=m] QPushButton {
+    background: #7A493D;
+}
+RoomItem[kind=m] QPushButton:hover {
+    background: #8B6056
+}
+RoomItem[kind=m] QPushButton:pressed {
+    background: #9C776E
+}
+
+RoomItem[space='0'] {
+    background: #DC143C;
+}
+RoomItem[space='0'] QPushButton {
+    background: #63091A;
+}
+RoomItem[space='0'] QPushButton:hover {
+    background: #722130
+}
+RoomItem[space='0'] QPushButton:pressed {
+    background: #813846
+}
+
+ViewItem[selected=true] {
+    background: #4B0082;
+}
+ViewItem[selected=true] QLabel {
+    color: #FFF;
+}
+ViewItem[selected=true] QPushButton {
+    background: #11003D;
+    color: #FFF;
+}
+ViewItem[selected=true] QPushButton:hover {
+    background: #20104A;
+}
+ViewItem[selected=true] QPushButton:pressed {
+    background: #2F2056;
+}
+
+Dialog_OccupantSelect {
+    background: #294157;
+}
+
+QSpinBox {
+    min-width: 100px;
+    min-height: 30px;
+    border-radius: 6px;
+    padding-left: 5px;
+    border: 2px solid black;
+}
+QSpinBox::down-button {
+    background: url(images/down-arrow.png) no-repeat;
+    width: 16px;
+    height: 13px;
+    margin-right:4px;
+    margin-bottom: 2px;
+}
+QSpinBox::up-button {
+    background: url(images/up-arrow.png) no-repeat;
+    width: 16px;
+    height: 13px;
+    margin-right:4px;
+}
+
+Window_Password {
+    min-width: 400px;
+    min-height: 180px;
+}
+Window_Password QLabel[password=true]{
+    border: 2px solid white;
+    border-radius: 20px;
+    background: white;
+    font-size: 20px;
+    font-weight: bold;
+    font-style:italic;
+    padding: 5px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+Window_Password QPushButton[password=true] {
+    width: 200px;
+}
+Window_Password QLineEdit[password=true] {
+    width: 200px;
+    margin-top: 20px;
+}
+Window_Password QPushButton[password=true] {
+    margin-bottom: 15px;
+}
+
+Dialog_PassChange {
+    background: #294157;
+}
+Dialog_PassChange QFrame[inputs=true] {
+    border: 2px solid white;
+    border-radius: 20px;
+    background: white;
+}
+Dialog_PassChange QFrame[inputs=true] QLabel {
+    margin-right: 10px;
+    margin-left: 5px;
+}
+Dialog_PassChange QFrame[inputs=true] QLineEdit {
+    min-width: 150px;
+}
+Dialog_PassChange QPushButton {
+    max-width: 100px;
+}
