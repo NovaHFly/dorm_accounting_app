@@ -35,7 +35,7 @@ def main_cli():
         pass_window.show()
 
     # Launch the application
-    sys.exit(app.exec_())
+    sys.exit(app.exec())
 
 
 if __name__ == '__main__':

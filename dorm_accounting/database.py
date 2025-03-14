@@ -356,7 +356,7 @@ class DataBase(metaclass=SingletonMeta):
             self.db = database
 
             if not self.db.get("password"):
-                self.db["password"] = "123b1bf932b8d863f41e07dba383d23d5ff9b54fdfd3d33695f3fe76d861f319"
+                self.db["password"] = "5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8"
 
         self.authorized = False
 
